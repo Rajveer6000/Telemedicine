@@ -67,7 +67,9 @@ function ModalSignin() {
   };
 
   const signinHandle = async () => {
-    const email = (document.getElementById("email") as HTMLInputElement).value;
+    console.log("rediret");
+    window.location.href = "patientdashboard";
+  /*  const email = (document.getElementById("email") as HTMLInputElement).value;
     const password = (document.getElementById("password") as HTMLInputElement)
       .value;
 
@@ -124,7 +126,7 @@ function ModalSignin() {
       }
     } catch (error) {
       console.error("Error sending JSON data:", error);
-    }
+    }*/
   };
   const signinHandledoc = async () => {
     const doctor_id = (document.getElementById("Doctorid") as HTMLInputElement)
